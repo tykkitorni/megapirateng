@@ -40,7 +40,8 @@ extern const AP_HAL::HAL& hal;
  ##endif
  #  //*/
 
-#define DF_RESET 41             // RESET  (PG0)
+//#define DF_RESET 41             // RESET  (PG0)
+#define DF_RESET 34             // KRL: RESET  (PC3)
 #define DF_CARDDETECT 33        // PC4
 
 // AT45DB321D Commands (from Datasheet)

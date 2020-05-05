@@ -159,7 +159,8 @@ static DataFlash_APM2 DataFlash;
 #elif CONFIG_HAL_BOARD == HAL_BOARD_APM1
 static DataFlash_APM1 DataFlash;
 #elif CONFIG_HAL_BOARD == HAL_BOARD_MPNG
-static DataFlash_MPNG DataFlash;
+//static DataFlash_MPNG DataFlash;
+static DataFlash_APM2 DataFlash;  // krl : I have a bigger dataflash
 #elif CONFIG_HAL_BOARD == HAL_BOARD_AVR_SITL
 //static DataFlash_File DataFlash("/tmp/APMlogs");
 static DataFlash_SITL DataFlash;

@@ -13,7 +13,8 @@ extern const AP_HAL::HAL& hal;
 
 void MPNGSPIDeviceManager::init(void* machtnichts) {
     /* dataflow cs is on arduino pin 53, PORTB0 */
-    AVRDigitalSource* df_cs = new AVRDigitalSource(_BV(0), PB);
+    //AVRDigitalSource* df_cs = new AVRDigitalSource(_BV(0), PB);
+    AVRDigitalSource* df_cs = new AVRDigitalSource(_BV(2), PC);
     /* dataflash: divide clock by 2 to 8Mhz, set SPI_MODE_3
      * spcr gets 0x0C to set SPI_MODE_3
      * spsr gets bit SPI2X for clock divider */
