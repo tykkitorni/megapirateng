@@ -85,7 +85,8 @@
   #define MPNG_BOARD_TYPE RCTIMER_CRIUS_V2
  #endif
 
- #if MPNG_BOARD_TYPE != RCTIMER_CRIUS_V2
+// krl : I have modified hobby king board (CRIUS_V1) with big data flash
+ #if MPNG_BOARD_TYPE != RCTIMER_CRIUS_V2 && MPNG_BOARD_TYPE != CRIUS_V1
  	#define LOGGING_ENABLED DISABLED
  #endif
 
